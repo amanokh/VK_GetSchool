@@ -20,6 +20,7 @@ answer = response.read()
 dic=eval(answer)            #transform json answer to dictionary
 
 print ("Parsing users...")
+print ("")
 pupils=int(dic['response']['count'])
 for i in dic['response']['items']:
     try:
